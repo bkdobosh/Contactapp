@@ -1,7 +1,7 @@
 var contact = [
 						{
 							"name": "Hope Woods",
-							"cell": "1-684-636-1128",
+							"cell": "1-684-636-1188",
 							"email": "et.rutrum.eu@estac.net"
 						},
 						{
@@ -504,3 +504,18 @@ var contact = [
 console.log (contact [1].name);
 console.log (contact [1].phoneNumber);
 console.log (contact [1].emailAddress);
+
+
+
+function addContacts() {
+var name = $("#nameInput").val();
+var email = $("#emailInput").val();
+var phone = $("#phoneNumber").val();
+
+contact.push({"name" : name, "email" : email, "phone" : phone});
+
+console.log(name);
+console.log(email);
+console.log(phone);
+console.log(contact);
+}
