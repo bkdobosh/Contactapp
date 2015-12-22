@@ -522,4 +522,26 @@ console.log(name);
 console.log(email);
 console.log(phone);
 console.log(contact);
+
+$("#nameInput").val("");
+$("#emailInput").val("");
+$("#phoneNumber").val("");
+
+var listContainer = document.createElement("ul");
+
+
+
+var nameInfo = contact[0].name;
+var emailInfo = contact[0].email;
+var phoneInfo = contact[0].phone;
+
+var listN = ("<li>" , {class : "contactInfo", text: nameInfo});
+var listE = ("<li>" , {class : "contactInfo", text: emailInfo});
+var listP = ("<li>" , {class : "contactInfo", text: phoneInfo});
+
+$("#contactInfo").append(listN);
+$("#contactInfo").append(listE);
+$("#contactInfo").append(listP);
+
+
 }
