@@ -511,37 +511,63 @@ console.log (contact [1].phoneNumber);
 console.log (contact [1].emailAddress);
 
 function addContacts() {
-var name = $("#nameInput").val();
-var email = $("#emailInput").val();
-var phone = $("#phoneNumber").val();
+	var name = $("#nameInput").val();
+	var email = $("#emailInput").val();
+	var phone = $("#phoneNumber").val();
 
-contact.push({"name" : name, "email" : email, "phone" : phone});
-
-
-console.log(name);
-console.log(email);
-console.log(phone);
-console.log(contact);
-
-$("#nameInput").val("");
-$("#emailInput").val("");
-$("#phoneNumber").val("");
-
-var listContainer = document.createElement("ul");
+	contact.push({"name" : name, "email" : email, "cell" : phone});
 
 
+	console.log(name);
+	console.log(email);
+	console.log(phone);
+	console.log(contact);
 
-var nameInfo = contact[0].name;
-var emailInfo = contact[0].email;
-var phoneInfo = contact[0].phone;
+	$("#nameInput").val("");
+	$("#emailInput").val("");
+	$("#phoneNumber").val("");
 
-var listN = ("<li>" , {class : "contactInfo", text: nameInfo});
-var listE = ("<li>" , {class : "contactInfo", text: emailInfo});
-var listP = ("<li>" , {class : "contactInfo", text: phoneInfo});
+	var listContainer = document.createElement("ul");
 
-$("#contactInfo").append(listN);
-$("#contactInfo").append(listE);
-$("#contactInfo").append(listP);
 
+
+	var nameInfo = contact[0].name;
+	var emailInfo = contact[0].email;
+	var phoneInfo = contact[0].phone;
+
+	var listN = ("<li>" , {class : "contactInfo", text: nameInfo});
+	var listE = ("<li>" , {class : "contactInfo", text: emailInfo});
+	var listP = ("<li>" , {class : "contactInfo", text: phoneInfo});
+
+	$("#contactInfo").append(listN);
+	$("#contactInfo").append(listE);
+	$("#contactInfo").append(listP);
+
+
+	for(var i = 0; i < contact.length; i++){
+		
+		console.log(nameInfo);
+		console.log(emailInfo);
+		console.log(phoneInfo);
+
+		var contactContainerList = document.createElement("ul");
+		var name = document.createElement("li");
+		var cell = document.createElement("li");
+		var phone = document.createElement("li");
+
+		contactContainerList.class = "contactContainer"
+
+		var nameInfo = contact[i].name;
+		var emailInfo = contact[i].email;
+		var phoneInfo = contact[i].cell; 
+
+
+
+		var nameText = document.createTextNode("name");
+		var nameEmail = document.createTextNode("Hello World");
+		var nameCell = document.createTextNode("Hello World");
+	}
 
 }
+//bbbb
+
