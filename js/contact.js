@@ -5,6 +5,11 @@ var contact = [
 							"email": "et.rutrum.eu@estac.net"
 						},
 						{
+							"name": "Josh Bodh",
+							"cell": "1-452-432-2222",
+							"email": "Sed.eget.lacus@ddddddf.net"
+						},
+						{
 							"name": "Bertha Mercado",
 							"cell": "1-452-432-2255",
 							"email": "Sed.eget.lacus@miAliquam.net"
@@ -505,14 +510,13 @@ console.log (contact [1].name);
 console.log (contact [1].phoneNumber);
 console.log (contact [1].emailAddress);
 
-
-
 function addContacts() {
 var name = $("#nameInput").val();
 var email = $("#emailInput").val();
 var phone = $("#phoneNumber").val();
 
 contact.push({"name" : name, "email" : email, "phone" : phone});
+
 
 console.log(name);
 console.log(email);
