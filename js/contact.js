@@ -551,9 +551,9 @@ function addContacts() {
 		console.log(phoneInfo);
 
 		var contactContainerList = document.createElement("ul");
-		var name = document.createElement("li");
-		var cell = document.createElement("li");
-		var phone = document.createElement("li");
+		var nameListItem = document.createElement("li");
+		var emailListItem = document.createElement("li");
+		var phoneListItem = document.createElement("li");
 
 		contactContainerList.class = "contactContainer"
 
@@ -563,9 +563,25 @@ function addContacts() {
 
 
 
-		var nameText = document.createTextNode("name");
-		var nameEmail = document.createTextNode("Hello World");
-		var nameCell = document.createTextNode("Hello World");
+		var nameText = document.createTextNode(nameInfo);
+		var emailText = document.createTextNode(emailInfo);
+		var cellText = document.createTextNode(phoneInfo);
+
+		nameListItem.appendChild(nameText);
+		emailListItem.appendChild(emailText);
+		phoneListItem.appendChild(cellText);
+
+
+		$("#contactInfo").append(contactContainerList);
+		contactContainerList.appendChild(nameListItem);
+		contactContainerList.appendChild(emailListItem);
+		contactContainerList.appendChild(phoneListItem);
+		
+
+
+
+
+
 	}
 
 }
