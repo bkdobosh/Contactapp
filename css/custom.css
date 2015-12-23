@@ -1,3 +1,26 @@
 .starter-template{
 	margin-top: 51px;
 }
+
+#contactInfo > ul > li {
+color: #1919FF;
+font-size: 1em;
+
+list-style: none;
+
+font-weight: bold;
+padding-top: 0.5em;
+}
+
+#contactInfo > ul{
+
+background-color: grey;
+border: 1px solid black;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+margin-top: 1em;
+margin-bottom: 1em;
+width: auto;
+}
+
