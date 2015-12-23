@@ -511,12 +511,6 @@ console.log (contact [1].name);
 console.log (contact [1].phoneNumber);
 console.log (contact [1].emailAddress);
 
-function addContacts() {
-	var name = $("#nameInput").val();
-	var email = $("#emailInput").val();
-	var phone = $("#phoneNumber").val();
-
-	contact.push({"name" : name, "email" : email, "cell" : phone});
 
 
 	console.log(name);
