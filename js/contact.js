@@ -1,10 +1,5 @@
 var contact = [
 						{
-							"name": "Hope Woods",
-							"cell": "1-684-636-1188",
-							"email": "et.rutrum.eu@estac.net"
-						},
-						{
 							"name": "Josh Bodh",
 							"cell": "1-452-432-2222",
 							"email": "Sed.eget.lacus@ddddddf.net"
