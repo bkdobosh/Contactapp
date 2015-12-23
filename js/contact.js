@@ -524,7 +524,12 @@ console.log (contact [1].emailAddress);
 
 	var listContainer = document.createElement("ul");
 
+function addContacts() {
+	var name = $("#nameInfo").val();
+	var email = $("#emailInput").val();
+	var phone = $("#phoneNumber").val();
 
+	contact.push({"name" : name, "email" : email, "cell" : phone});
 
 	var nameInfo = contact[0].name;
 	var emailInfo = contact[0].email;
