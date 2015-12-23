@@ -1,4 +1,10 @@
 var contact = [
+
+						{
+							"name" : "Laurie DoBosh",
+							"cell" : "203-610-9731",
+							"email" : "ldobosh@tcco.com"
+						},
 						{
 							"name": "Josh Bodh",
 							"cell": "1-452-432-2222",
