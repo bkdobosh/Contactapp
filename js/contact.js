@@ -516,44 +516,14 @@ function addContacts() {
 
 	contact.push({"name" : name, "email" : email, "cell" : phone});
 
-
-
-
-	$("#nameInput").val("");
-	$("#emailInput").val("");
-	$("#phoneNumber").val("");
-
-	var listContainer = document.createElement("ul");
-
-
-
-	var nameInfo = contact[0].name;
-	var emailInfo = contact[0].email;
-	var phoneInfo = contact[0].phone;
-
-	var listN = ("<li>" , {class : "contactInfo", text: nameInfo});
-	var listE = ("<li>" , {class : "contactInfo", text: emailInfo});
-	var listP = ("<li>" , {class : "contactInfo", text: phoneInfo});
-
-	$("#contactInfo").append(listN);
-	$("#contactInfo").append(listE);
-	$("#contactInfo").append(listP);
-
-
 	for(var i = 0; i < contact.length; i++){
 		
-		console.log(nameInfo);
-		console.log(emailInfo);
-		console.log(phoneInfo);
 
 		var contactContainerList = document.createElement("ul");
 		var nameListItem = document.createElement("li");
 		var emailListItem = document.createElement("li");
 		var phoneListItem = document.createElement("li");
-
 		
-
-		contactContainerList.class = "contactContainer"
 
 		var nameInfo = contact[i].name;
 		var emailInfo = contact[i].email;
@@ -562,7 +532,6 @@ function addContacts() {
 		var sendEmail = document.createElement ("a");
 
 		sendEmail.setAttribute("href", "mailto:" + emailInfo);
-
 
 
 		var nameText = document.createTextNode(nameInfo);
@@ -580,14 +549,8 @@ function addContacts() {
 		contactContainerList.appendChild(nameListItem);
 		contactContainerList.appendChild(emailListItem);
 		contactContainerList.appendChild(phoneListItem);
-		
-
-
-
-
-
 	}
 
 }
-//bbbb
+
 
