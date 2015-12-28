@@ -1,22 +1,23 @@
 .starter-template{
 	margin-top: 100px;
+	margin-bottom: 30px;
 	font-weight: bold;
+	background-color: #9fdf9f;
+	border:solid black 1px;
+	background-size: auto;
 }
 
 #contactInfo > ul > li {
-color: #0F3EA3;
+color: #000080;
 font-size: 1em;
-
 list-style: none;
-
 font-weight: bold;
 padding: .5em;
 }
 
 #contactInfo > ul{
 
-background-color: #EDF09E;
-border: 1px solid black;
+background-color: #ffffcc;
 -webkit-border-radius: 15px;
 -moz-border-radius: 15px;
 border-radius: 15px;
@@ -24,8 +25,10 @@ margin-top: 1em;
 margin-bottom: 1em;
 width: 400px;
 padding-left: .5em;
+border: solid black 1px;
 }
 
 .container{
 margin-top: 5px;
 }
+
